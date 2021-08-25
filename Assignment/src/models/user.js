@@ -15,12 +15,12 @@ const userSchema = new mongoose.Schema({
 
     password: {
         type: String,
-       //required: [true, 'Password must be there'],
+       required: [true, 'Password must be there'],
         minlength: 8
     },
     confirmPassword: {
         type: String,
-       // required: [true, 'confirm your password'],
+        required: [true, 'confirm your password'],
         validate: {
             validator: function (confirmPassword) {
                 // console.log(this.password, passwordConfirm)

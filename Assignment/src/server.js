@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
 
-const DBURL ="mongodb+srv://kaushal:e47sLa1zTsd7uQU1@cluster0.htqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
+const DBURL ="mongodb+srv://kaushal:y2HajQPusxk2oeUb@cluster0.htqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
  
 mongoose.connect(DBURL, {
     useNewUrlParser: true,
