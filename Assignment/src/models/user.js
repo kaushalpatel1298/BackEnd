@@ -23,7 +23,6 @@ const userSchema = new mongoose.Schema({
         required: [true, 'confirm your password'],
         validate: {
             validator: function (confirmPassword) {
-                // console.log(this.password, passwordConfirm)
                 return confirmPassword === this.password
             },
             message: "Passwords must be same"
@@ -35,7 +34,7 @@ const userSchema = new mongoose.Schema({
     },
     zipCode: {
         type: Number,
-       // required: true
+        required: true
     }
 
 })
